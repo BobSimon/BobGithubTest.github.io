@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>${action}</title>
+</head>
+<style>
+    .container {
+        margin-left: 2rem;
+    }
+    .container a {
+        display: block;
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+    .container a:hover {
+        text-decoration: underline;
+    }
+    .container p {
+        /*text-indent: 2rem*/
+    }
+</style>
+<body>
+<div class="">
+    <img src="http://p196x3e4d.bkt.clouddn.com/AmzicsLogo.png" alt="安知" />
+    <p class="title">亲爱的【${userName}】：</p>
+    <div class="container">
+        <p class="content">您好！欢迎使用安知${action}功能。请在30分钟内点击下方链接，进行${action}。</p>
+        <a href="${url}">点这里！点这里！</a>
+        <p>如果您并未发过此请求，则可能是因为其他用户在尝试注册时误输入了您的电子邮件地址而使您收到这封邮件，那么您可以放心的忽略此邮件，无需进一步采取任何操作。</p>
+        <p>此致</p>
+        <p>安知团队敬上</p>
+        <p class="date">${time}</p>
+        <p>(请注意，该电子邮件地址不接受回复邮件，要解决问题或了解您的帐户详情，请登录网站留言或咨询客服)</p>
+    </div>
+</div>
+</body>
+</html>
